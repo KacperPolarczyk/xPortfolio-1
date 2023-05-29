@@ -1,0 +1,325 @@
+/* ****************************** */
+/* BELOW 1300px */
+/* ****************************** */
+
+@media (max-width: 82em) {
+  html {
+    font-size: 60%;
+  }
+
+  .container {
+    padding: 0 6.4rem;
+  }
+}
+
+/* ****************************** */
+/* BELOW 1200px */
+/* ****************************** */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 58%;
+  }
+
+  /* About me */
+
+  .about .heading p {
+    padding-right: 10%;
+  }
+}
+
+/* ****************************** */
+/* BELOW 960px */
+/* ****************************** */
+
+@media (max-width: 60em) {
+  html {
+    font-size: 56%;
+  }
+
+  .container {
+    padding: 0 4.8rem;
+  }
+
+  /* Nav - mobile */
+
+  .nav {
+    padding: 2.4rem 6.4rem;
+    background-color: rgb(248, 249, 250);
+  }
+
+  nav .right .hyperlinks {
+    flex-direction: column;
+    position: absolute;
+
+    width: 100%;
+    z-index: -1;
+
+    background-color: rgba(248, 249, 250);
+
+    padding: 1.8rem 3.6rem;
+  }
+
+  nav .right .hyperlinks a {
+    width: 100%;
+
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .hyperlinks {
+    right: 0%;
+    top: -300%;
+
+    transition: all 0.3s;
+  }
+
+  .hyperlinks.open {
+    top: 100%;
+  }
+
+  /* Hero */
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .left {
+    padding-left: 0;
+  }
+
+  .hero .right .img {
+    width: 40%;
+  }
+
+  /* About me */
+
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6.4rem;
+
+    padding-top: 9.6rem;
+    margin-bottom: 12.8rem;
+  }
+
+  .about .heading p {
+    padding-right: 0;
+  }
+
+  .about .left .img {
+    width: 40%;
+  }
+
+  /* Experience */
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 9.6rem;
+  }
+
+  .experience--1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .experience--1 .logo {
+    display: flex;
+
+    align-items: center;
+    justify-content: start;
+
+    padding-bottom: 3.6rem;
+  }
+
+  .experience--1 .logo img {
+    width: 30%;
+  }
+
+  /* Services */
+
+  .services .services--grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service p {
+    padding-right: 0%;
+  }
+
+  /* Portfolio */
+
+  .portfolio .heading {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: none;
+
+    gap: 2.4rem;
+    padding-bottom: 5.6rem;
+  }
+
+  .portfolio .heading .btn {
+    display: flex;
+    justify-content: start;
+
+    padding-left: 0;
+
+    width: 100%;
+  }
+
+  /* Contact */
+
+  .contact--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 4.8rem;
+
+    padding-bottom: 12.8rem;
+  }
+
+  .contact--grid .buttons {
+    display: none;
+  }
+}
+
+/* ****************************** */
+/* BELOW 768px */
+/* ****************************** */
+
+@media (max-width: 48em) {
+  html {
+    font-size: 54%;
+  }
+
+  /* Portfolio */
+
+  .portfolio {
+    padding-top: 6.4rem;
+  }
+
+  .portfolio .work {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+
+  .footer {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .footer .col-1 {
+    padding-left: 0rem;
+  }
+}
+
+/* ****************************** */
+/* BELOW 560px */
+/* ****************************** */
+
+@media (max-width: 35em) {
+  /* Hero */
+
+  .hero .right .img {
+    width: 55%;
+  }
+
+  /* About me */
+
+  .about .left .img {
+    width: 55%;
+  }
+
+  /* Services */
+
+  .services .services--grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Portfolio */
+
+  .portfolio .heading p {
+    padding-right: 0%;
+  }
+
+  /* Contact */
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+
+  .footer {
+    grid-template-columns: 2fr 1fr;
+
+    gap: 3.6rem;
+  }
+}
+
+/* ****************************** */
+/* BELOW 512px */
+/* ****************************** */
+
+@media (max-width: 32em) {
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  /* Hero */
+
+  .hero {
+    padding: 12.8rem 3.6rem 12.8rem 3.6rem;
+  }
+
+  .buttons {
+    padding: 3.6rem 0;
+  }
+
+  .buttons .button--work {
+    display: none;
+  }
+
+  /* Footer */
+
+  .bottom {
+    padding: 1.8rem 0rem;
+  }
+}
+
+/* ****************************** */
+/* BELOW 512px */
+/* ****************************** */
+
+@media (max-width: 22em) {
+  html {
+    font-size: 52.5%;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  /* Hero */
+
+  .hero .right .img {
+    width: 70%;
+  }
+
+  /* About me */
+
+  .about .left .img {
+    width: 70%;
+  }
+}

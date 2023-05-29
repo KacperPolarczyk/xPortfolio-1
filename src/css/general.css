@@ -1,0 +1,320 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM ---
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+
+Default - 400
+
+Medium - 500
+Semi-bold - 600
+Bold - 700
+
+- Line heights
+
+Default: 1
+
+Small - 1.05
+Medium - 1.2
+Paragraph default - 1.4
+Large - 1.8
+
+- Letter spacing
+-0.25px
+0.75px
+
+--- 02 COLORS ---
+
+Heading: 
+Body background: 
+
+- Primary: #1864ab
+- Tints: #e8f0f7 #bad1e6
+- Shades: #165a9a
+- Greys: #e9ecef
+
+
+### Cards ###
+
+
+--- 05 SHADOWS ---
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS ---
+
+Default - 12px
+
+--- 07 WHITESPACE ---
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+:root {
+  --bg-light: #f8f9fa;
+
+  --text-dark: #212529;
+
+  --paragraph: #495057;
+
+  --primary: #1864ab;
+
+  --tint-1: #e8f0f7;
+  --tint-2: #d1e0ee;
+
+  --shade-1: #165a9a;
+
+  --grey-1: #e9ecef;
+  --grey-2: #f1f3f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: var(--bg-light);
+
+  transition: all 0.3s;
+}
+
+.container {
+  /* 1140px */
+  max-width: 130rem;
+  padding: 0 8rem;
+  margin: 0 auto;
+}
+
+h2 {
+  display: block;
+
+  color: var(--text-dark);
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h3 {
+  display: block;
+
+  color: var(--text-dark);
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h4 {
+  display: block;
+
+  color: var(--text-dark);
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+p {
+  display: block;
+
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--paragraph);
+}
+
+/* Navbar */
+
+nav {
+  display: block;
+  top: 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2.4rem 12.8rem;
+
+  z-index: 999;
+  background-color: rgba(248, 249, 250, 0.808);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: fixed;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .left .logo a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--text-dark);
+}
+
+nav .right a {
+  text-decoration: none;
+}
+
+nav .right .hyperlinks {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+nav .hyperlinks a {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  padding: 1rem 2rem;
+
+  transition: all 0.4s;
+}
+
+nav .hyperlinks a:hover,
+nav .hyperlinks a:active {
+  color: var(--text-dark-hover);
+  background-color: var(--tint-1);
+  border-radius: 24px;
+}
+
+nav .hyperlinks a:link,
+nav .hyperlinks a:visited {
+  color: var(--text-dark);
+}
+
+.heading span {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+::selection {
+  background: var(--tint-2);
+}
+
+/* Mobile View */
+
+.mobile-menu {
+  display: none;
+  z-index: 999;
+
+  font-size: 3.2rem;
+}
+
+.mobile-menu:hover,
+.mobile-menu:active {
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 6.4rem;
+  border-top: 0.2rem solid var(--grey-1);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 10fr 5fr 5fr 5fr;
+
+  padding-top: 4.8rem;
+  padding-bottom: 8rem;
+  border-bottom: 0.2rem solid var(--grey-1);
+
+  gap: 2.4rem;
+}
+
+.footer .col-1 {
+  padding-left: 1.8rem;
+}
+
+.footer .col-1 span {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.footer .col-1 h4 {
+  padding-bottom: 0.6rem;
+}
+
+.footer .col-2 span,
+.col-3 span,
+.col-4 span {
+  display: block;
+
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-dark);
+
+  padding-bottom: 1.8rem;
+}
+
+.footer .col-2 ol,
+.col-3 ol,
+.col-4 ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer .col-2 a,
+.col-3 a,
+.col-4 a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--paragraph);
+}
+
+.footer .col-2 a:hover,
+.footer .col-2 a:active {
+  color: var(--text-dark-hover);
+}
+.footer .col-3 a:hover,
+.footer .col-3 a:active {
+  color: var(--text-dark-hover);
+}
+.footer .col-4 a:hover,
+.footer .col-4 a:active {
+  color: var(--text-dark-hover);
+}
+
+.bottom {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+
+  padding: 1.8rem 3.6rem;
+}
+
+.bottom span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--paragraph);
+}
+
+.bottom a {
+  color: var(--paragraph);
+}
